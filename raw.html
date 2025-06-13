@@ -249,8 +249,8 @@
     </div>
 
  <footer>
-    <a href="/about">漫画村について</a>
-    <br>copyright © 漫画村, All rights reserved.2025
+    <a href="/about">漫画ナマステについて</a>
+    <br>copyright © 漫画ナマステ, All rights reserved.2025
   </footer>
 
 <style>
@@ -396,4 +396,77 @@ document.querySelector('.refresh-btn').addEventListener('click', function(e) {
   e.preventDefault();
   location.reload();
 });
+</script>
+
+<style>
+  footer a {
+    color: #ffffff;
+    text-decoration: none; 
+  }
+
+  footer a:hover {
+    color: #696969;
+  }
+</style>
+
+<div id="floating-ad" style="position: fixed; bottom: 10px; right: 10px; z-index: 9999;">
+  <div style="position: relative; width: 300px; height: 250px;">
+
+    <button onclick="document.getElementById('floating-ad').style.display='none'" 
+            style="position: absolute; top: 4px; right: 4px; background: #333; color: white; border: none; padding: 4px 8px; cursor: pointer; font-size: 14px; font-weight: bold; border-radius: 5px;">
+      ×
+    </button>
+
+    <iframe loading="lazy" 
+      src="/ad82d852dd9f4eb9ec7296f44b6bc5a5.gif.webp"
+      frameborder="0" 
+      scrolling="no" 
+      width="300" 
+      height="250" 
+      style="border: 0; overflow: hidden;">
+    </iframe>
+  </div>
+</div>
+</div>
+</div>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = '内容をスキップ';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
 </script>
