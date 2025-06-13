@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<html lang="ja">
+
+<a href="https://mangamura.neocities.org">
+   <img src="/Screenshot 2025-06-13 22.43.27.png" width="180" height="90">
+</a>
+
+
+<br>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画ナマステについて</title>
+    <style>
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            padding: 15px;
+            background-color: #f5f5f5;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .accordion-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .accordion-content-inner {
+            padding: 15px;
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 500px; /* 適切な最大高さに調整 */
+        }
+        
+        .accordion-arrow {
+            transition: transform 0.3s;
+        }
+        
+        .accordion-item.active .accordion-arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>漫画ナマステとは？</span>
+                <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    漫画ナマステはネット上に落ちている画像を機械で収集して保存しているウェブ型クローンサイトです。 保存元で非公開になると見れなくなります。 サイトは無料で利用できます。
+リクエストもできます。本サイトは2025/6/13より運営者・Slamp Vaneise(本名非公開)が運営しています。
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>漫画ナマステを見るのは違法ではないの？</span>
+                <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    違法ではありません。<br>
+                    当サイトでは国際的な著作権の法律がない国を本拠地としているので、法律にも違反していないですし
+                    <br>
+                    今の日本の法律ではユーザー側は漫画の画像をダウンロードしない限り合法です。
+                    
+                </div>
+            </div>
+        </div>
+   
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>漫画ナマステが重い、レイアウトが崩れる</span>
+                <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    漫画ナマステは１世代前のデバイスまでサポートします。あまりに古いブラウザや機種・ネットワークでは正常に表示されない場合があります。またjavascriptがオフのブラウザでは表示されません。
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>権利者の方に</span>
+                <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    漫画ナマステは日本国内のいかなる企業・個人との関わりはありません。<br>
+                    漫画村自身のサーバーには画像を保管していないです。また画像の保管元は漫画村と一切関係ありません。画像の削除依頼は画像の保管元にお問い合わせください。このサイトについての問い合わせは krmebszw@proton.me まで送ってください。
+                    <img src="/Screenshot 2025-06-13 22.43.27.png">
+                    
+                </div>
+            </div>
+        </div>
+        
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+                
+                
+                document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画ナマステ</title>
+    <style>
+               .header {
+            background-color: #008000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        </style>
+      
+
+
+<footer style="
+    background-color: #808080;
+    color: white;
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+">
+    <div style="max-width: 1000px; margin: 0 auto;"> <!-- このmargin: 0 auto;で中央配置 -->
+        <!-- コンテンツ -->
+    </div>
+
+ <footer>
+    <a href="/about">漫画ナマステについて</a>
+    <br>copyright © 漫画ナマステ, All rights reserved.2025
+  </footer>
+
+<style>
+  footer a {
+    color: #ffffff;
+    text-decoration: none; 
+  }
+
+  footer a:hover {
+    color: #696969;
+  }
+</style>
+
+<div class="fixed-buttons">
+  <a href="#" class="refresh-btn" title="ページを更新">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+      <path d="M3 3v5h5"/>
+      <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+      <path d="M16 16h5v5"/>
+    </svg>
+  </a>
+  
+  <a href="/about" target="_blank" class="contact-btn" title="お問い合わせ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="22"/>
+    </svg>
+  </a>
+  
+  <a href="#" class="back-to-top" title="トップに戻る">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.fixed-buttons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fixed-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.refresh-btn {
+  background-color: #00bfff; /* 水色 */
+  color: white;
+}
+
+.contact-btn {
+  background-color: white;
+  color: #333;
+}
+
+.back-to-top {
+  background-color: white;
+  color: #333;
+  display: none; /* 初期状態では非表示 */
+}
+
+/* スクロール時に表示 */
+.back-to-top.visible {
+  display: flex;
+}
+</style>
+
+<script>
+// トップに戻るボタンの表示/非表示
+window.addEventListener('scroll', function() {
+  var backToTop = document.querySelector('.back-to-top');
+  if (window.pageYOffset > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+// トップに戻るボタンの機能
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// 更新ボタンの機能
+document.querySelector('.refresh-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  location.reload();
+});
+</script>
