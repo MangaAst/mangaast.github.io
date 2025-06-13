@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画ナマステ - 無料で漫画を読めれる！| 漫画ナマステで楽しもう！</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .site-header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            margin: 10px auto;
+        }
+        .page-header {
+            background-color: #008000;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4757;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .manga-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .manga-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .manga-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        .manga-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .manga-cover {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        .manga-info {
+            padding: 12px;
+        }
+        .manga-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .manga-chapter {
+            color: #666;
+            font-size: 12px;
+        }
+        .new-badge {
+            background-color: #ff4757;
+            color: white;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        @media (max-width: 600px) {
+            .manga-grid {
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+                gap: 15px;
+            }
+            .manga-cover {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <a href="https://mangaast.github.io/raw">
+            <img src="/Screenshot 2025-06-13 22.43.27.png" width="180" height="90" class="logo" alt="漫画">
+        </a>
+    </div>
+
+    <div class="page-header">漫画</div>
+
+    <div class="container">
+        <h1>いま話題の漫画!</h1>
+        
+        <div class="manga-grid">
+            <!-- アオのハコ (修正済み) -->
+            <a href="/aonohako2025" class="manga-card-link" id="aonohako-link">
+                <div class="manga-card">
+                    <img src="https://jpee.alammanga.com/JPEE/attachment/comic/2024/07/29/202407291655374783.jpg" class="manga-cover">
+                    <div class="manga-info">
+                        <div class="manga-title">アオのハコ<span class="new-badge">new</span></div>
+                        <div class="manga-chapter">第193話</div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- 逃げ上手の若者 -->
+            <div class="manga-card">
+                <img src="https://jpee.alammanga.com/JPEE/34678/13quqks0d4g.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">逃げ上手の若者<span class="new-badge">new</span></div>
+                    <div class="manga-chapter">第199話</div>
+                </div>
+            </div>
+            
+            <!-- 転生したらスライムだっ... -->
+            <div class="manga-card">
+                <img src="https://jpee.alammanga.com/JPEE/attachment/comic/2024/07/30/202407301013386630.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">転生したらスライムだっ...</div>
+                    <div class="manga-chapter">第128話</div>
+                </div>
+            </div>
+            
+            <!-- ダンダダン -->
+            <div class="manga-card">
+                <img src="https://www.mangajikan.com/attachment/comic/2025/04/11/202504112305579023.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">ダンダダン</div>
+                    <div class="manga-chapter">第188話</div>
+                </div>
+            </div>
+            
+            <!-- 2.5次元の誘惑 -->
+            <a href="/ririsa2025" class="manga-card-link">
+                <div class="manga-card">
+                    <img src="https://jpdd.alammanga.com/JPDD/cover/25dimensionalseduction.jpg" class="manga-cover">
+                    <div class="manga-info">
+                        <div class="manga-title">2.5次元の誘惑</div>
+                        <div class="manga-chapter">第185話</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<br>
+
+<br>
+
+    <div class="container">
+        <h1>エロスの極み漫画！</h1>
+        
+        <div class="manga-grid">
+            <!-- アオのハコ (修正済み) -->
+            <a href="/aonohako2025" class="manga-card-link" id="aonohako-link">
+                <div class="manga-card">
+                    <img src="https://jpee.alammanga.com/JPEE/attachment/comic/2024/07/29/202407291655374783.jpg" class="manga-cover">
+                    <div class="manga-info">
+                        <div class="manga-title">アオのハコ<span class="new-badge">new</span></div>
+                        <div class="manga-chapter">第193話</div>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- 逃げ上手の若者 -->
+            <div class="manga-card">
+                <img src="https://jpee.alammanga.com/JPEE/34678/13quqks0d4g.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">逃げ上手の若者<span class="new-badge">new</span></div>
+                    <div class="manga-chapter">第199話</div>
+                </div>
+            </div>
+            
+            <!-- 転生したらスライムだっ... -->
+            <div class="manga-card">
+                <img src="https://jpee.alammanga.com/JPEE/attachment/comic/2024/07/30/202407301013386630.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">転生したらスライムだっ...</div>
+                    <div class="manga-chapter">第128話</div>
+                </div>
+            </div>
+            
+            <!-- ダンダダン -->
+            <div class="manga-card">
+                <img src="https://www.mangajikan.com/attachment/comic/2025/04/11/202504112305579023.jpg" class="manga-cover">
+                <div class="manga-info">
+                    <div class="manga-title">ダンダダン</div>
+                    <div class="manga-chapter">第188話</div>
+                </div>
+            </div>
+            
+            <!-- 2.5次元の誘惑 -->
+            <a href="/ririsa2025" class="manga-card-link">
+                <div class="manga-card">
+                    <img src="https://jpdd.alammanga.com/JPDD/cover/25dimensionalseduction.jpg" class="manga-cover">
+                    <div class="manga-info">
+                        <div class="manga-title">2.5次元の誘惑</div>
+                        <div class="manga-chapter">第185話</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<br>
+
+<br>
+
+<footer style="
+    background-color: #808080;
+    color: white;
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+">
+    <div style="max-width: 1000px; margin: 0 auto;"> <!-- このmargin: 0 auto;で中央配置 -->
+        <!-- コンテンツ -->
+    </div>
+
+ <footer>
+    <a href="/about">漫画村について</a>
+    <br>copyright © 漫画村, All rights reserved.2025
+  </footer>
+
+<style>
+  footer a {
+    color: #ffffff;
+    text-decoration: none; 
+  }
+
+  footer a:hover {
+    color: #696969;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const aonohakoLink = document.getElementById('aonohako-link');
+  let clickCount = 0;
+  const adUrls = [
+    'https://example.com/ad1',
+    'https://example.com/ad2',
+    'https://example.com/ad3'
+  ];
+  let usedAds = [];
+
+  aonohakoLink.addEventListener('click', function(event) {
+    clickCount++;
+    if (clickCount <= 2) {
+      event.preventDefault();
+
+      let availableAds = adUrls.filter(url => !usedAds.includes(url));
+      if (availableAds.length === 0) {
+        // 全部使ったらリセット（万一2回以上アクセスするため）
+        usedAds = [];
+        availableAds = [...adUrls];
+      }
+
+      const randomAdUrl = availableAds[Math.floor(Math.random() * availableAds.length)];
+      usedAds.push(randomAdUrl);
+
+      window.open(randomAdUrl, '_blank'); // 新しいタブで広告開く
+    }
+    // 3回目はそのまま普通のページに進む
+  });
+});
+</script>
+
+<div class="fixed-buttons">
+  <a href="#" class="refresh-btn" title="ページを更新">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+      <path d="M3 3v5h5"/>
+      <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+      <path d="M16 16h5v5"/>
+    </svg>
+  </a>
+  
+  <a href="https://mangamura.neocities.org/about" target="_blank" class="contact-btn" title="お問い合わせ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="22"/>
+    </svg>
+  </a>
+  
+  <a href="#" class="back-to-top" title="トップに戻る">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.fixed-buttons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fixed-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.refresh-btn {
+  background-color: #00bfff; /* 水色 */
+  color: white;
+}
+
+.contact-btn {
+  background-color: white;
+  color: #333;
+}
+
+.back-to-top {
+  background-color: white;
+  color: #333;
+  display: none; /* 初期状態では非表示 */
+}
+
+/* スクロール時に表示 */
+.back-to-top.visible {
+  display: flex;
+}
+</style>
+
+<script>
+// トップに戻るボタンの表示/非表示
+window.addEventListener('scroll', function() {
+  var backToTop = document.querySelector('.back-to-top');
+  if (window.pageYOffset > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+// トップに戻るボタンの機能
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// 更新ボタンの機能
+document.querySelector('.refresh-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  location.reload();
+});
+</script>
