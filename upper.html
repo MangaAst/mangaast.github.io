@@ -199,3 +199,109 @@
     });
   });
 </script>
+
+<style>
+  /* 地球ボタン本体 */
+  .lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 70px; /* ?ボタンの左に配置 */
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3498db;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+  }
+
+  .lang-toggle:hover {
+    background-color: #f0f8ff;
+  }
+
+  /* ドロップダウンメニュー */
+  .lang-menu {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 9999;
+    display: none;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 220px;
+  }
+
+  .lang-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  .lang-menu a:hover {
+    background-color: #f0f8ff;
+  }
+</style>
+
+<!-- 🌐 言語切替ボタン -->
+<div class="lang-toggle" id="langToggle" title="言語選択">🌐</div>
+
+<!-- 言語リスト -->
+<div class="lang-menu" id="langMenu">
+  <a href="/ja">🇯🇵 日本語</a>
+  <a href="/ko">🇰🇷 한국어</a>
+  <a href="/zh">🇨🇳 中文</a>
+  <a href="/tw">🇹🇼 繁體中文</a>
+  <a href="/yue">🇭🇰 廣東話</a>
+  <a href="/vi">🇻🇳 Tiếng Việt</a>
+  <a href="/tl">🇵🇭 Tagalog</a>
+  <a href="/th">🇹🇭 ภาษาไทย</a>
+  <a href="/my">🇲🇲 မြန်မာ</a>
+  <a href="/id">🇮🇩 Indonesia</a>
+  <a href="/ms">🇲🇾 Melayu</a>
+  <a href="/ms-arab">🇲🇾 بِهَاسَ مَلَيْو‎</a>
+  <a href="/ru">🇷🇺 Русский</a>
+  <a href="/hi">🇮🇳 हिन्दी</a>
+  <a href="/ta">🇮🇳 தமிழ்</a>
+  <a href="/ne">🇳🇵 नेपाली</a>
+  <a href="/bn">🇧🇩 বাংলা</a>
+  <a href="/bo">🇨🇳 བོད་སྐད་</a>
+  <a href="/ug">🇨🇳 ئۇيغۇرچە</a>
+  <a href="/ar">🇸🇦 العربية</a>
+  <a href="/de">🇩🇪 Deutsch</a>
+  <a href="/fr">🇫🇷 Français</a>
+  <a href="/pt">🇧🇷 Português</a>
+  <a href="/sv">🇸🇪 Svenska</a>
+  <a href="/fi">🇫🇮 Suomi</a>
+  <a href="/uk">🇺🇦 Українська</a>
+</div>
+
+<!-- 表示切替スクリプト -->
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langMenu = document.getElementById('langMenu');
+
+  langToggle.addEventListener('click', () => {
+    langMenu.style.display = (langMenu.style.display === 'block') ? 'none' : 'block';
+  });
+
+  // 外をクリックしたら閉じる
+  document.addEventListener('click', function(e) {
+    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
+      langMenu.style.display = 'none';
+    }
+  });
+</script>
