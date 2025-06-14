@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>漫画村お問い合わせ</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .link-section {
+            max-width: 400px;
+        }
+
+        .link-section h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .link-section h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .link-section a {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 350px;
+            min-height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .home-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .home-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 左側リンクセクション -->
+    <div class="link-section">
+        <h1>Upper iFilter</h1>
+        <h3>漫画、同人誌など</h3>
+        <a href="https://mangajikan.cc">・MangaJikan.cc</a>
+        <a href="https://raw-zip.com/">・raw-zip.com (審査中)</a>
+        <a href="https://mangajikan.com">・MangaJikan.com (対策済み)</a>
+        <a href="https://mangajikan.to">・MangaJikan.to (対策済み)</a>
+        <a href="https://rawlazy.io">・RawLazy.io (対策済み)</a>
+    </div>
+
+    <!-- 右側お問い合わせボックス -->
+    <div class="contact-container">
+        <h2>連絡方法</h2>
+        <p>広告掲載協力、またはコメントやクレームがある場合は、気軽に連絡してください。</p>
+        <p id="email"></p>
+
+        <a href="mailto:antialifs@tuta.io" class="home-link">メールを送る</a>
+    </div>
+
+    <script>
+        document.getElementById('email').innerHTML = 'antialifs' + '@' + 'tuta.io';
+    </script>
+
+</body>
+</html>
+
+<style>
+  .help-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white; /* 背景白 */
+    color: #3498db;          /* 文字青 */
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+    z-index: 9999;
+    text-decoration: none;
+    border: 2px solid #3498db; /* 青の枠線追加 */
+  }
+  .help-button:hover {
+    background-color: #f0f8ff; /* 薄い青背景でホバー */
+  }
+</style>
+
+<a href="/customer-service.html" class="help-button" title="ヘルプ">?</a>
+
+<style>
+  .scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3498db;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+    z-index: 9999;
+    border: 2px solid #3498db;
+    text-decoration: none;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* 初期はクリックできない */
+  }
+  .scroll-top-button:hover {
+    background-color: #f0f8ff;
+  }
+  .scroll-top-button.show {
+    opacity: 1;
+    pointer-events: auto; /* 表示されたらクリック可能に */
+  }
+</style>
+
+<a href="#" class="scroll-top-button" title="トップへ">↑</a>
+
+<script>
+  const scrollButton = document.querySelector('.scroll-top-button');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // 150pxスクロールしたら表示
+      scrollButton.classList.add('show');
+    } else {
+      scrollButton.classList.remove('show');
+    }
+  });
+
+  scrollButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
