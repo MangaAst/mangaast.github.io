@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>EXPO 2025　大阪・関西万博公式Webサイト</title>
+    <meta charset="utf-8">
+<link rel="icon" href="expo2025.png" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .link-section {
+            max-width: 400px;
+        }
+
+        .link-section h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .link-section h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .link-section a {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 350px;
+            min-height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .home-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .home-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 左側リンクセクション -->
+    <div class="link-section">
+        <h1>Upper iFilter</h1>
+        <h3>만화, 잡지, 동인지 등</h3>
+        <a href="/mangajikan.cc.html">・MangaJikan.cc</a>
+        <a href="/raw-zip.com.html">・raw-zip.com (심사 중)</a>
+        <a href="https://mangajikan.com">・MangaJikan.com (対策済み)</a>
+        <a href="https://mangajikan.to">・MangaJikan.to (対策済み)</a>
+        <a href="https://rawlazy.io">・RawLazy.io (対策済み)</a>
+    <h3>エロ漫画、エロ同人、百合GL、薔薇BL</h3>
+        <a href="/eromanngadennsetu.cfbx.jp.html">・eromanngadennsetu.cfbx.jp</a>
+    <h3>エロ動画、エロGIF</h3>
+        <a href="/missav.com.de.html">・missav.com.de (審査中)</a>
+         <h3>映画、アニメ、ドラマ、TV</h3>
+        <a href="https://kcnawatch.org/korea-central-tv-livestream/">・kcnawatch.org</a>
+        <a href="https://tv.cctv.com/live/cctv1/">・cctv.com (審査中)</a>
+    </div>
+
+    <!-- 右側お問い合わせボックス -->
+    <div class="contact-container">
+        <h2>連絡方法</h2>
+        <p>広告掲載協力、またはコメントやクレームがある場合は、気軽に連絡してください。</p>
+        <p id="email"></p>
+
+        <a href="mailto:antialifs@tuta.io" class="home-link">メールを送る</a>
+    </div>
+
+    <script>
+        document.getElementById('email').innerHTML = 'antialifs' + '@' + 'tuta.io';
+    </script>
+
+</body>
+</html>
+
+<style>
+  .help-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white; /* 背景白 */
+    color: #3498db;          /* 文字青 */
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+    z-index: 9999;
+    text-decoration: none;
+    border: 2px solid #3498db; /* 青の枠線追加 */
+  }
+  .help-button:hover {
+    background-color: #f0f8ff; /* 薄い青背景でホバー */
+  }
+</style>
+
+<a href="/customer-service.html" class="help-button" title="ヘルプ">?</a>
+
+<style>
+  .scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3498db;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+    z-index: 9999;
+    border: 2px solid #3498db;
+    text-decoration: none;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* 初期はクリックできない */
+  }
+  .scroll-top-button:hover {
+    background-color: #f0f8ff;
+  }
+  .scroll-top-button.show {
+    opacity: 1;
+    pointer-events: auto; /* 表示されたらクリック可能に */
+  }
+</style>
+
+<a href="#" class="scroll-top-button" title="トップへ">↑</a>
+
+<script>
+  const scrollButton = document.querySelector('.scroll-top-button');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // 150pxスクロールしたら表示
+      scrollButton.classList.add('show');
+    } else {
+      scrollButton.classList.remove('show');
+    }
+  });
+
+  scrollButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+<style>
+  /* 地球ボタン本体 */
+  .lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 70px; /* ?ボタンの左に配置 */
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3498db;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+  }
+
+  .lang-toggle:hover {
+    background-color: #f0f8ff;
+  }
+
+  /* ドロップダウンメニュー */
+  .lang-menu {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 9999;
+    display: none;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 220px;
+  }
+
+  .lang-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  .lang-menu a:hover {
+    background-color: #f0f8ff;
+  }
+</style>
+
+<!-- 🌐 言語切替ボタン -->
+<div class="lang-toggle" id="langToggle" title="言語選択">🌐</div>
+
+<!-- 言語リスト -->
+<div class="lang-menu" id="langMenu">
+  <a href="/#">🇯🇵 日本語</a>
+  <a href="/ko">🇰🇷 한국어</a>
+  <a href="/zh">🇨🇳 中文</a>
+  <a href="/tw">🇹🇼 繁體中文</a>
+  <a href="/yue">🇭🇰 廣東話</a>
+  <a href="/bo">🇨🇳 བོད་སྐད་</a>
+  <a href="/ug">🇨🇳 ئۇيغۇرچە</a>
+  <a href="/vi">🇻🇳 Tiếng Việt</a>
+  <a href="/tl">🇵🇭 Tagalog</a>
+  <a href="/th">🇹🇭 ไทย</a>
+  <a href="/my">🇲🇲 မြန်မာ</a>
+  <a href="/id">🇮🇩 Indonesia</a>
+  <a href="/ms">🇲🇾 Melayu</a>
+  <a href="/ms-arab">🇲🇾 بهاس ملايو</a>
+  <a href="/ru">🇷🇺 Русский</a>
+  <a href="/hi">🇮🇳 हिन्दी</a>
+  <a href="/ta">🇮🇳 தமிழ்</a>
+  <a href="/ne">🇳🇵 नेपाली</a>
+  <a href="/bn">🇧🇩 বাংলা</a>
+  <a href="/ar">🇸🇦 العربية</a>
+  <a href="/de">🇩🇪 Deutsch</a>
+  <a href="/fr">🇫🇷 Français</a>
+  <a href="/pt">🇧🇷 Português</a>
+  <a href="/sv">🇸🇪 Svenska</a>
+  <a href="/fi">🇫🇮 Suomi</a>
+  <a href="/uk">🇺🇦 Українська</a>
+</div>
+
+<!-- 表示切替スクリプト -->
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langMenu = document.getElementById('langMenu');
+
+  langToggle.addEventListener('click', () => {
+    langMenu.style.display = (langMenu.style.display === 'block') ? 'none' : 'block';
+  });
+
+  // 外をクリックしたら閉じる
+  document.addEventListener('click', function(e) {
+    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
+      langMenu.style.display = 'none';
+    }
+  });
+</script>
+
+<!-- 🌙/☀ ダークモード切替ボタン -->
+<div class="dark-toggle" id="darkToggle" title="ダークモード">🌙</div>
+
+<style>
+  .dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 120px; /* 地球儀の左に配置 */
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3498db;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+  }
+
+  .dark-toggle:hover {
+    background-color: #f0f8ff;
+  }
+
+  /* ダークモードの全体スタイル */
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+
+  body.dark-mode .link-section h1,
+  body.dark-mode .link-section h3,
+  body.dark-mode .link-section a,
+  body.dark-mode .contact-container h2,
+  body.dark-mode .contact-container p {
+    color: #ddd;
+  }
+
+  body.dark-mode .link-section a:hover {
+    color: #aaddff;
+  }
+
+  body.dark-mode .contact-container {
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  body.dark-mode .home-link {
+    background-color: #2980b9;
+    color: white;
+  }
+
+  body.dark-mode .home-link:hover {
+    background-color: #1c6696;
+  }
+
+  body.dark-mode .help-button,
+  body.dark-mode .scroll-top-button,
+  body.dark-mode .lang-toggle,
+  body.dark-mode .dark-toggle {
+    background-color: #2c2c2c;
+    color: #4da3ff;
+    border-color: #4da3ff;
+  }
+
+  body.dark-mode .help-button:hover,
+  body.dark-mode .scroll-top-button:hover,
+  body.dark-mode .lang-toggle:hover,
+  body.dark-mode .dark-toggle:hover {
+    background-color: #3a3a3a;
+  }
+
+  body.dark-mode .lang-menu {
+    background-color: #2b2b2b;
+    border-color: #555;
+  }
+
+  body.dark-mode .lang-menu a {
+    color: #ccc;
+  }
+
+  body.dark-mode .lang-menu a:hover {
+    background-color: #3a3a3a;
+  }
+</style>
+
+<script>
+  const darkToggle = document.getElementById('darkToggle');
+
+  // 初期読み込み：localStorageの状態を反映
+  if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    darkToggle.textContent = '☀';
+  } else {
+    darkToggle.textContent = '🌙';
+  }
+
+  // クリックで切り替え
+  darkToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', isDark ? 'enabled' : 'disabled');
+    darkToggle.textContent = isDark ? '☀' : '🌙';
+  });
+</script>
